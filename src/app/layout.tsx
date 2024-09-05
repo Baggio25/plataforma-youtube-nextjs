@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+
+
+import { Header } from "@/components/header/Header";
+
 import "./globals.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
@@ -14,7 +18,10 @@ interface IRootLayout extends Readonly<{children: React.ReactNode}> { }
 export default function RootLayout({ children }: IRootLayout) {
   return (
     <html lang="pt-BR">
-      <body className={nunito.className}>{children}</body>
+      <body className={nunito.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
