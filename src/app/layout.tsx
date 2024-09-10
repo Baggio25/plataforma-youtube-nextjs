@@ -9,7 +9,7 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CodarseBaggio",
+  title: "Codarse - Página Inicial",
   description: "Desenvolvimento de plataforma de ensino",
 };
 
